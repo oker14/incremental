@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>What's <br> up</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Atomic Creator</title>
   </head>
   <body>
-    <h1>wsp</h1>
-    <p>yo</p>
+    <div class="Atoms">
+      <p id="AtomsDisplay", class="Text">0 Atoms Formed</p>
+      <p id="AtomGainDisplay", class="Text">0 Atoms every 1 second</p>
+    </div>
+    <div class="Molecules">
+      <button id="MoleculeButton", onclick="CreateMolecule()", class="Button">Create a Molecule</button>
+      <p1 id="MoleculesDisplay", class="Text">0 Molecules Created</p1>
+    </div>
+    <div class="Ions">
+      <button id="IonButton", onclick="ConstructIon()", class="Button">Construct an Ion</button>
+      <p1 id="IonsDisplay", class="Text">0 Ions Constructed</p1>
+    </div>
+    <div class="Extra">
+      <button id="SaveButton", onclick="SaveGame()", class="Button">Save Game</button>
+    </div>
+    <script src="main.js" charset="utf-8" type="text/javascript"></script>
   </body>
 </html>
-
